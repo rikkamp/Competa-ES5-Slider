@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+.slide {
+    &__container {
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        width: 100%;
+        height: 100%;
+    }
+    &__picture {
+        width: 100%;
+        height: 100%;
+    }
+    &__box {
+        display: flex;
+        height: 6%;
+        width: 100%;
+        margin-top: 35%;
+        position: absolute;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &__button {
+        &--previous{
+        
+            float: left;
+        }
+        &--next {
+            float: right;
+        }
+        display: flex;
+        height: 53px;
+        width: 53px;
+        
+    }
+    &__button-img {
+        &:hover {
+            background-color: lightgray;
+            opacity: 0.5;
+        }
+        height: 50px;
+        width: 50px;
+        border: 1px solid;
+        border-radius: 50px;
+    }
+}
